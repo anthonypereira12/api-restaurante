@@ -9,7 +9,7 @@
     "reset": "prisma migrate reset",
     "prisma:deploy": "prisma migrate deploy",
     "seed": "tsx prisma/seed.ts",
-    "dev": "npx ts-node-dev --respawn index.ts", 
+    "dev": "tsx watch index.ts",
     "vercel-build": "npx prisma migrate deploy", 
     "postinstall": "prisma generate"
   },
