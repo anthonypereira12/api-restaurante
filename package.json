@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
   "dev": "tsx watch index.ts",
-  "vercel-build": "npx prisma migrate deploy",
+  "vercel-build": "tsc && prisma generate && prisma migrate deploy",
   "postinstall": "prisma generate"
   },
   "dependencies": {

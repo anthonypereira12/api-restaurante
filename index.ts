@@ -2,12 +2,12 @@ import express from "express";
 import cors from "cors";
 import "dotenv/config";
 
-import auth from "./src/routes/auth.js";
-import restaurants from "./src/routes/restaurants.js";
-import items from "./src/routes/items.js";
-import orders from "./src/routes/orders.js";
-import reviews from "./src/routes/reviews.js";
-import analytics from "./src/routes/analytics.js";
+import auth from "./src/routes/auth.ts";
+import restaurants from "./src/routes/restaurants.ts";
+import items from "./src/routes/items.ts";
+import orders from "./src/routes/orders.ts";
+import reviews from "./src/routes/reviews.ts";
+import analytics from "./src/routes/analytics.ts";
 
 const app = express();
 app.use(cors());
