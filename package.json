@@ -10,7 +10,7 @@
     "prisma:deploy": "prisma migrate deploy",
     "seed": "tsx prisma/seed.ts",
     "dev": "tsx watch index.ts",
-    "vercel-build": "npx prisma migrate deploy", 
+    "vercel-build": "npx prisma migrate deploy",
     "postinstall": "prisma generate"
   },
   "dependencies": {
@@ -23,6 +23,9 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.9.2",
     "prisma": "^5.19.1",
     "tsx": "^4.19.1",
     "typescript": "^5.6.3"
